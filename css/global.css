@@ -2,6 +2,7 @@
 
 body {
 	font-family: "Segoe UI", sans-serif;
+	color: #555555;
 }
 .page-wrap {
 	width: 1024px;
@@ -14,4 +15,7 @@ body {
 }
 .page-wrap a {
 	color: #0072c6;
+}
+.page-wrap h1 {
+	font-size: 28px;
 }

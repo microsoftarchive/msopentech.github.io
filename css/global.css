@@ -1,0 +1,17 @@
+/* CSS */
+
+body {
+	font-family: "Segoe UI", sans-serif;
+}
+.page-wrap {
+	width: 1024px;
+	margin: 0 auto;
+	text-align:center;
+}
+.page-wrap img {
+	width:400px;
+	height:auto;
+}
+.page-wrap a {
+	color: #0072c6;
+}

@@ -1,21 +1,24 @@
-/* CSS */
-
+/* SCSS */
+/* line 3, ../scss/global.scss */
 body {
-	font-family: "Segoe UI", sans-serif;
-	color: #555555;
-}
+  font-family: "Segoe UI", sans-serif;
+  color: #555555; }
+
+/* line 7, ../scss/global.scss */
 .page-wrap {
-	width: 1024px;
-	margin: 0 auto;
-	text-align:center;
-}
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center; }
+
+/* line 12, ../scss/global.scss */
 .page-wrap img {
-	width:400px;
-	height:auto;
-}
+  width: 400px;
+  height: auto; }
+
+/* line 16, ../scss/global.scss */
 .page-wrap a {
-	color: #0072c6;
-}
+  color: #0072c6; }
+
+/* line 19, ../scss/global.scss */
 .page-wrap h1 {
-	font-size: 28px;
-}
+  font-size: 28px; }

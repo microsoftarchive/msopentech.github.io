@@ -2,3 +2,5 @@
 config.rb
 scss/
 .sass-cache
+codekit-config.json
+.jshintignore

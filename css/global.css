@@ -101,7 +101,7 @@ nav {
     float: left;
     margin-right: 28px;
     margin-bottom: 28px;
-    background: white; }
+    /*background: $white;*/ }
     /* line 106, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb:nth-child(6n+6) {
       margin-right: 0px; }

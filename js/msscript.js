@@ -21,7 +21,14 @@ function getFontSize(name){
             }
 
 } // getFontSize
-
+function get_random_color() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.round(Math.random() * 15)];
+    }
+    return color;
+}
 
 // dynamically call our public repos
 
@@ -33,16 +40,19 @@ function getFontSize(name){
             for(var i in result ) {
                 var $length = getFontSize(result[i].name);
                 $(".repository-thumbs").append(
-                    "<div class='repo-single-thumb'><h2><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
+"<div class='repo-single-thumb' style='background-color:" + get_random_color() + ";'><h2><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
                     result[i].name + "</a></h2></div>"
                 );
                
             }
+            
             $("#repo_count").append("Total Repos: " + result.length);
 
         } // success function
 
     }); // end ajax call
+
+
 
 
 

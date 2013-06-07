@@ -96,11 +96,11 @@ nav {
     position: relative;
     width: 140px;
     height: 140px;
-    /*border: $dborder;*/
+    border: 2px solid #333333;
     float: left;
     margin-right: 28px;
     margin-bottom: 28px;
-    /*background-color:#ffffff;*/ }
+    background-color: #ffffff; }
     /* line 105, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .triangle {
       display: inline-block;

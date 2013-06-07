@@ -95,7 +95,7 @@ nav {
   .repository-thumbs .repo-single-thumb {
     position: relative;
     width: 140px;
-    height: 40px;
+    height: 140px;
     /*border: $dborder;*/
     float: left;
     margin-right: 28px;

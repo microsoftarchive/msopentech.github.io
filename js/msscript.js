@@ -44,7 +44,7 @@ function get_random_class() {
             for(var i in result ) {
                 var $length = getFontSize(result[i].name);
                 $(".repository-thumbs").append(
-                    "<div class='repo-single-thumb' style='background-color:#ffffff;'><div class='triangle " + get_random_class() + "' style='border-right: 69px solid " + get_random_color() + ";'></div><h2><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
+                    "<div class='repo-single-thumb'><div class='triangle " + get_random_class() + "' style='border-right: 69px solid " + get_random_color() + ";'></div><h2><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
                     result[i].name + "</a></h2></div>"
                 );
                

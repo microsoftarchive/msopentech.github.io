@@ -1,24 +1,196 @@
 /* SCSS */
 /* line 5, ../scss/global.scss */
+div, nav, header, footer, aside, ul, input, h2 {
+  -mox-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 10, ../scss/global.scss */
+ul, ol, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px; }
+
+/* line 14, ../scss/global.scss */
+li {
+  list-style: none; }
+
+/* line 18, ../scss/global.scss */
+.group:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+/* line 24, ../scss/global.scss */
 body {
   font-family: "Segoe UI", sans-serif;
   color: #555555; }
 
-/* line 9, ../scss/global.scss */
+/* line 29, ../scss/global.scss */
+a {
+  color: white;
+  text-decoration: none; }
+
+/* line 34, ../scss/global.scss */
 .page-wrap {
-  width: 1024px;
+  width: 1100px;
+  border: 2px solid #e3e3e3;
   margin: 0 auto;
-  text-align: center; }
+  background-image: url(../images/bgtopleft.png), url(../images/bgbottomright.png);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom; }
 
-/* line 14, ../scss/global.scss */
-.page-wrap img {
-  width: 400px;
-  height: auto; }
+/* line 43, ../scss/global.scss */
+header {
+  position: relative;
+  height: 75px;
+  width: 100%;
+  background: #333333;
+  margin-bottom: 0px; }
+  /* line 49, ../scss/global.scss */
+  header .logo {
+    width: 290px;
+    height: 48px;
+    background-image: url(../images/msopentech_logo.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 10px;
+    top: 10px; }
+  /* line 58, ../scss/global.scss */
+  header h1 {
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    line-height: 75px;
+    padding: 0px;
+    margin: 0px; }
 
-/* line 18, ../scss/global.scss */
-.page-wrap a {
-  color: #0072c6; }
+/* line 69, ../scss/global.scss */
+nav {
+  width: 100%;
+  background: #333333;
+  height: 40px;
+  border-top: 2px solid #e3e3e3; }
+  /* line 74, ../scss/global.scss */
+  nav ul {
+    width: 100%; }
+    /* line 76, ../scss/global.scss */
+    nav ul li {
+      float: left;
+      width: 19%;
+      text-align: center;
+      border-right: 2px solid #e3e3e3; }
+      /* line 81, ../scss/global.scss */
+      nav ul li:last-child {
+        border: none; }
+      /* line 84, ../scss/global.scss */
+      nav ul li a {
+        line-height: 40px; }
 
-/* line 21, ../scss/global.scss */
-.page-wrap h1 {
-  font-size: 28px; }
+/* line 92, ../scss/global.scss */
+.repository-thumbs {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 28px; }
+  /* line 96, ../scss/global.scss */
+  .repository-thumbs .repo-single-thumb {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border: 2px solid #333333;
+    float: left;
+    margin-right: 28px;
+    margin-bottom: 28px;
+    background-color: #ffffff; }
+    /* line 105, ../scss/global.scss */
+    .repository-thumbs .repo-single-thumb .triangle {
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 0;
+      height: 0;
+      vertical-align: top;
+      border-top: 69px solid transparent;
+      border-left: 69px solid transparent;
+      border-bottom: 69px solid transparent;
+      content: ""; }
+    /* line 118, ../scss/global.scss */
+    .repository-thumbs .repo-single-thumb .top {
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      transform: rotate(-90deg); }
+    /* line 123, ../scss/global.scss */
+    .repository-thumbs .repo-single-thumb .bottom {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    /* line 128, ../scss/global.scss */
+    .repository-thumbs .repo-single-thumb .left {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      transform: rotate(180deg); }
+    /* line 133, ../scss/global.scss */
+    .repository-thumbs .repo-single-thumb:nth-child(6n+6) {
+      margin-right: 0px; }
+    /* line 136, ../scss/global.scss */
+    .repository-thumbs .repo-single-thumb h2 {
+      text-align: center;
+      position: absolute;
+      background: rgba(51, 51, 51, 0.92);
+      width: 100%;
+      bottom: 0px;
+      color: white;
+      font-weight: 200;
+      height: 40px;
+      padding: 5px; }
+      /* line 146, ../scss/global.scss */
+      .repository-thumbs .repo-single-thumb h2 a {
+        word-wrap: break-word; }
+
+/* line 153, ../scss/global.scss */
+.resources {
+  width: 1100px;
+  margin: 0 auto;
+  background: #333333;
+  color: white;
+  padding-bottom: 15px; }
+  /* line 159, ../scss/global.scss */
+  .resources .resource-cat {
+    width: 25%;
+    float: left; }
+    /* line 162, ../scss/global.scss */
+    .resources .resource-cat h3 {
+      color: white;
+      text-align: center;
+      margin: 15px 0; }
+    /* line 167, ../scss/global.scss */
+    .resources .resource-cat ul {
+      width: 80%;
+      margin: 0 auto; }
+
+/* line 174, ../scss/global.scss */
+footer {
+  width: 1100px;
+  margin: 0 auto;
+  background: #333333; }
+  /* line 178, ../scss/global.scss */
+  footer .policies {
+    width: 100%;
+    font-size: 12px;
+    padding-bottom: 20px;
+    padding-top: 10px; }
+    /* line 183, ../scss/global.scss */
+    footer .policies .policy-links {
+      width: 50%;
+      float: left; }
+      /* line 186, ../scss/global.scss */
+      footer .policies .policy-links ul li {
+        float: left;
+        width: 30%;
+        text-align: center; }
+    /* line 193, ../scss/global.scss */
+    footer .policies .copyright {
+      width: 49%;
+      float: right; }
+
+/* end css */

@@ -106,13 +106,13 @@ nav {
       display: inline-block;
       position: absolute;
       top: 0px;
-      right: 0px;
+      /*right:0px;*/
       width: 0;
       height: 0;
       vertical-align: top;
-      border-top: 69px solid transparent;
-      border-left: 69px solid transparent;
-      border-bottom: 69px solid transparent;
+      border-top: 68px solid transparent;
+      border-left: 68px solid transparent;
+      border-bottom: 68px solid transparent;
       content: ""; }
     /* line 118, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .top {

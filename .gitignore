@@ -2,3 +2,6 @@
 config.rb
 scss/
 .sass-cache
+.jshintignore
+js/msscript-ck.js
+codekit-config.json

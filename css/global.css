@@ -142,54 +142,55 @@ nav {
       color: white;
       font-weight: 200;
       height: 40px;
-      padding: 5px; }
-      /* line 146, ../scss/global.scss */
+      padding: 5px;
+      line-height: 11px; }
+      /* line 147, ../scss/global.scss */
       .repository-thumbs .repo-single-thumb h2 a {
         word-wrap: break-word; }
 
-/* line 153, ../scss/global.scss */
+/* line 154, ../scss/global.scss */
 .resources {
   width: 1100px;
   margin: 0 auto;
   background: #333333;
   color: white;
   padding-bottom: 15px; }
-  /* line 159, ../scss/global.scss */
+  /* line 160, ../scss/global.scss */
   .resources .resource-cat {
     width: 25%;
     float: left; }
-    /* line 162, ../scss/global.scss */
+    /* line 163, ../scss/global.scss */
     .resources .resource-cat h3 {
       color: white;
       text-align: center;
       margin: 15px 0; }
-    /* line 167, ../scss/global.scss */
+    /* line 168, ../scss/global.scss */
     .resources .resource-cat ul {
       width: 80%;
       margin: 0 auto;
       margin-left: 75px; }
 
-/* line 175, ../scss/global.scss */
+/* line 176, ../scss/global.scss */
 footer {
   width: 1100px;
   margin: 0 auto;
   background: #333333; }
-  /* line 179, ../scss/global.scss */
+  /* line 180, ../scss/global.scss */
   footer .policies {
     width: 100%;
     font-size: 12px;
     padding-bottom: 20px;
     padding-top: 10px; }
-    /* line 184, ../scss/global.scss */
+    /* line 185, ../scss/global.scss */
     footer .policies .policy-links {
       width: 50%;
       float: left; }
-      /* line 187, ../scss/global.scss */
+      /* line 188, ../scss/global.scss */
       footer .policies .policy-links ul li {
         float: left;
         width: 30%;
         text-align: center; }
-    /* line 194, ../scss/global.scss */
+    /* line 195, ../scss/global.scss */
     footer .policies .copyright {
       width: 49%;
       float: right; }

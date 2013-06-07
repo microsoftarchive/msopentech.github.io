@@ -166,29 +166,30 @@ nav {
     /* line 167, ../scss/global.scss */
     .resources .resource-cat ul {
       width: 80%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-left: 75px; }
 
-/* line 174, ../scss/global.scss */
+/* line 175, ../scss/global.scss */
 footer {
   width: 1100px;
   margin: 0 auto;
   background: #333333; }
-  /* line 178, ../scss/global.scss */
+  /* line 179, ../scss/global.scss */
   footer .policies {
     width: 100%;
     font-size: 12px;
     padding-bottom: 20px;
     padding-top: 10px; }
-    /* line 183, ../scss/global.scss */
+    /* line 184, ../scss/global.scss */
     footer .policies .policy-links {
       width: 50%;
       float: left; }
-      /* line 186, ../scss/global.scss */
+      /* line 187, ../scss/global.scss */
       footer .policies .policy-links ul li {
         float: left;
         width: 30%;
         text-align: center; }
-    /* line 193, ../scss/global.scss */
+    /* line 194, ../scss/global.scss */
     footer .policies .copyright {
       width: 49%;
       float: right; }

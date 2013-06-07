@@ -22,12 +22,16 @@ function getFontSize(name){
 
 } // getFontSize
 function get_random_color() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.round(Math.random() * 15)];
-    }
+    var setColors = ['#e84523', '#a92e8c', '#d77bae', '#b92625', '#fdb800', '#de5e21', '#f6e800'];
+    var color = '';
+        color = setColors[Math.round(Math.random() * 6)];
     return color;
+}
+
+function get_random_class() {
+    var setClass = ['left', 'top', 'right', 'bottom'];
+    var rotate = setClass[Math.round(Math.random() * 3)];
+    return rotate;
 }
 
 // dynamically call our public repos
@@ -40,7 +44,7 @@ function get_random_color() {
             for(var i in result ) {
                 var $length = getFontSize(result[i].name);
                 $(".repository-thumbs").append(
-"<div class='repo-single-thumb' style='background-color:" + get_random_color() + ";'><h2><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
+                    "<div class='repo-single-thumb' style='background-color:#ffffff;'><div class='triangle " + get_random_class() + "' style='border-right: 69px solid " + get_random_color() + ";'></div><h2><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
                     result[i].name + "</a></h2></div>"
                 );
                

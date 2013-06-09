@@ -21,6 +21,19 @@ function getFontSize(name){
             }
 
 } // getFontSize
+
+function get_padding(name){
+        var $numPad = name.length;
+        if (($numPad >= 1) && ($numPad < 10)) {
+                return "padding-top : 14px";
+            }
+            else {
+                return "padding-top: 5px";
+            }
+
+} // get_padding
+
+
 function get_random_color() {
     var setColors = ['#e84523', '#a92e8c', '#d77bae', '#b92625', '#fdb800', '#de5e21', '#f6e800'];
     var color = '';
@@ -43,8 +56,9 @@ function get_random_class() {
         success: function(result) {
             for(var i in result ) {
                 var $length = getFontSize(result[i].name);
+                var $pad = get_padding(result[i].name);
                 $(".repository-thumbs").append(
-                    "<div class='repo-single-thumb'><h2><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
+                    "<div class='repo-single-thumb'><h2 style=' " + $pad + "'><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
                     result[i].name + "</a></h2></div>"
                 );
                
@@ -58,7 +72,7 @@ function get_random_class() {
 
 
 //this may go back in - it is the triangle that randomly changes color and rotates
-// <div class='triangle " + get_random_class() + "' style='border-right: 68px solid " + get_random_color() + ";'></div>
+// 
 
 
 }); // end annon function

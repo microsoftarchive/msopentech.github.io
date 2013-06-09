@@ -100,8 +100,10 @@ nav {
     float: left;
     margin-right: 28px;
     margin-bottom: 28px;
-    background-color: #ffffff; }
-    /* line 105, ../scss/global.scss */
+    background-color: #ffffff;
+    padding-top: 5px;
+    padding-left: 5px; }
+    /* line 107, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .triangle {
       display: inline-block;
       position: absolute;
@@ -114,25 +116,32 @@ nav {
       border-left: 68px solid transparent;
       border-bottom: 68px solid transparent;
       content: ""; }
-    /* line 118, ../scss/global.scss */
+    /* line 120, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .top {
       -webkit-transform: rotate(-90deg);
       -moz-transform: rotate(-90deg);
       transform: rotate(-90deg); }
-    /* line 123, ../scss/global.scss */
+    /* line 125, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .bottom {
       -webkit-transform: rotate(90deg);
       -moz-transform: rotate(90deg);
       transform: rotate(90deg); }
-    /* line 128, ../scss/global.scss */
+    /* line 130, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .left {
       -webkit-transform: rotate(180deg);
       -moz-transform: rotate(180deg);
       transform: rotate(180deg); }
-    /* line 133, ../scss/global.scss */
+    /* line 135, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb:nth-child(6n+6) {
       margin-right: 0px; }
-    /* line 136, ../scss/global.scss */
+    /* line 138, ../scss/global.scss */
+    .repository-thumbs .repo-single-thumb p {
+      margin: 0px;
+      font-size: 12px; }
+      /* line 141, ../scss/global.scss */
+      .repository-thumbs .repo-single-thumb p span {
+        color: #a92e8c; }
+    /* line 145, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb h2 {
       text-align: center;
       position: absolute;
@@ -143,54 +152,55 @@ nav {
       font-weight: 200;
       height: 40px;
       padding: 5px;
-      line-height: 11px; }
-      /* line 147, ../scss/global.scss */
+      line-height: 11px;
+      left: 0px; }
+      /* line 157, ../scss/global.scss */
       .repository-thumbs .repo-single-thumb h2 a {
         word-wrap: break-word; }
 
-/* line 154, ../scss/global.scss */
+/* line 164, ../scss/global.scss */
 .resources {
   width: 1100px;
   margin: 0 auto;
   background: #333333;
   color: white;
   padding-bottom: 15px; }
-  /* line 160, ../scss/global.scss */
+  /* line 170, ../scss/global.scss */
   .resources .resource-cat {
     width: 25%;
     float: left; }
-    /* line 163, ../scss/global.scss */
+    /* line 173, ../scss/global.scss */
     .resources .resource-cat h3 {
       color: white;
       text-align: center;
       margin: 15px 0; }
-    /* line 168, ../scss/global.scss */
+    /* line 178, ../scss/global.scss */
     .resources .resource-cat ul {
       width: 80%;
       margin: 0 auto;
       margin-left: 75px; }
 
-/* line 176, ../scss/global.scss */
+/* line 186, ../scss/global.scss */
 footer {
   width: 1100px;
   margin: 0 auto;
   background: #333333; }
-  /* line 180, ../scss/global.scss */
+  /* line 190, ../scss/global.scss */
   footer .policies {
     width: 100%;
     font-size: 12px;
     padding-bottom: 20px;
     padding-top: 10px; }
-    /* line 185, ../scss/global.scss */
+    /* line 195, ../scss/global.scss */
     footer .policies .policy-links {
       width: 50%;
       float: left; }
-      /* line 188, ../scss/global.scss */
+      /* line 198, ../scss/global.scss */
       footer .policies .policy-links ul li {
         float: left;
         width: 30%;
         text-align: center; }
-    /* line 195, ../scss/global.scss */
+    /* line 205, ../scss/global.scss */
     footer .policies .copyright {
       width: 49%;
       float: right; }

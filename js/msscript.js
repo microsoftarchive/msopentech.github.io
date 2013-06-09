@@ -47,6 +47,19 @@ function get_random_class() {
     return rotate;
 }
 
+function parseISO8601(value) {
+    a = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);
+    if (a){
+         return new Date(Date.UTC(+a[1], +a[2] - 1, +a[3], +a[4], +a[5], +a[6]));}
+
+    if (value.slice(0, 5) === 'Date(' && value.slice(-1) === ')') {
+       var d = new Date(value.slice(5, -1));
+
+       if (d){
+          return d;}
+    }
+    return new Date();
+  }
 // dynamically call our public repos
 
     $.ajax({
@@ -55,10 +68,13 @@ function get_random_class() {
         dataType: "json",
         success: function(result) {
             for(var i in result ) {
+                var thisRepo = result[i];
                 var $length = getFontSize(result[i].name);
                 var $pad = get_padding(result[i].name);
+                //var updatedAt = parseISO8601(thisRepo.updated_at);
+                //var updatedStr = $.format.date(updatedAt, "MM/dd/yy") + ' ' + $.format.date(updatedAt, "@HH:mm:ss");
                 $(".repository-thumbs").append(
-                    "<div class='repo-single-thumb'><h2 style=' " + $pad + "'><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
+                    "<div class='repo-single-thumb'><p>Watchers: <span>" + result[i].watchers + "</span></p><p>Forks: <span>" + result[i].forks + "</span></p><p>Language: <span>" + result[i].language + "</span></p><h2 style=' " + $pad + "'><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
                     result[i].name + "</a></h2></div>"
                 );
                

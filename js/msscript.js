@@ -33,6 +33,15 @@ function get_padding(name){
 
 } // get_padding
 
+function get_line_height(height){
+        var $numLine = height.length;
+            if (($numLine >= 12) && ($numLine < 30)) {
+                return "line-height : 12px";
+            }
+            else {
+                return "line-height : 11px";
+            }
+}
 
 function get_random_color() {
     var setColors = ['#e84523', '#a92e8c', '#d77bae', '#b92625', '#fdb800', '#de5e21', '#f6e800'];
@@ -72,11 +81,12 @@ function parseISO8601(value) {
                 var $length = getFontSize(result[i].name);
                 var $pad = get_padding(result[i].name);
                 var updatedAt = parseISO8601(thisRepo.updated_at);
+                var $lineHeight = get_line_height(result[i].name);
                 // console.log (updatedAt);
                 var updatedStr = $.format.date(updatedAt, "MM/dd/yy") + ' ' + $.format.date(updatedAt, "@HH:mm:ss");
                 console.log (updatedStr);
                 $(".repository-thumbs").append(
-                    "<div class='repo-single-thumb'><p>Watchers: <span>" + result[i].watchers + "</span></p><p>Forks: <span>" + result[i].forks + "</span></p><p>Language: <span>" + result[i].language + "</span></p><p>Last Updated: <br/><span>" + updatedStr + "</span></p><h2 style=' " + $pad + "'><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
+                    "<div class='repo-single-thumb'><p>Watchers: <span>" + result[i].watchers + "</span></p><p>Forks: <span>" + result[i].forks + "</span></p><p>Language: <span>" + result[i].language + "</span></p><p>Last Updated: <br/><span>" + updatedStr + "</span></p><h2 style=' " + $pad + "; " + $lineHeight + ";'><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
                     result[i].name + "</a></h2></div>"
                 );
                

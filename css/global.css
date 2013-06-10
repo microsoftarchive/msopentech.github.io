@@ -205,4 +205,14 @@ footer {
       width: 49%;
       float: right; }
 
+/* TEMP STYLE FOR CHART */
+/* line 215, ../scss/global.scss */
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white; }
+
 /* end css */

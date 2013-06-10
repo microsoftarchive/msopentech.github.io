@@ -94,26 +94,26 @@ function parseISO8601(value) {
         } // success function
 
     }); // end ajax call
-    $.ajax({
-            type: "GET",
-            url: "https://api.github.com/repos/msopentech/dash.js/stats/participation",
-            success: function(result){
-                for(var i in result ) {
-                    data = result[i];
-                    console.log(data);
-                //}
+    // $.ajax({
+    //         type: "GET",
+    //         url: "https://api.github.com/repos/msopentech/dash.js/stats/participation",
+    //         success: function(result){
+    //             for(var i in result ) {
+    //                 data = result[i];
+    //                 console.log(data);
+    //             //}
                     
-                    var chart = d3.select(".timeline-thumbs").append("div").attr("class", "chart");
-                    console.log(chart);
-                    chart.selectAll("div")
-                   .data(data)
-                   .enter().append("div")
-                   .style("width", function(d) { return d * 10 + "px"; })
-                   .text(function(d) { return d; });
-                }
+    //                 var chart = d3.select(".timeline-thumbs").append("div").attr("class", "chart");
+    //                 console.log(chart);
+    //                 chart.selectAll("div")
+    //                .data(data)
+    //                .enter().append("div")
+    //                .style("width", function(d) { return d * 10 + "px"; })
+    //                .text(function(d) { return d; });
+    //             }
                
-            }
-    }); // end ajax
+    //         }
+    // }); // end ajax
 
 //this may go back in - it is the triangle that randomly changes color and rotates
 // 

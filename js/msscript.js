@@ -71,16 +71,17 @@ function parseISO8601(value) {
                 var thisRepo = result[i];
                 var $length = getFontSize(result[i].name);
                 var $pad = get_padding(result[i].name);
-                //var updatedAt = parseISO8601(thisRepo.updated_at);
-                //var updatedStr = $.format.date(updatedAt, "MM/dd/yy") + ' ' + $.format.date(updatedAt, "@HH:mm:ss");
+                var updatedAt = parseISO8601(thisRepo.updated_at);
+                // console.log (updatedAt);
+                var updatedStr = $.format.date(updatedAt, "MM/dd/yy") + ' ' + $.format.date(updatedAt, "@HH:mm:ss");
+                console.log (updatedStr);
                 $(".repository-thumbs").append(
-                    "<div class='repo-single-thumb'><p>Watchers: <span>" + result[i].watchers + "</span></p><p>Forks: <span>" + result[i].forks + "</span></p><p>Language: <span>" + result[i].language + "</span></p><h2 style=' " + $pad + "'><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
+                    "<div class='repo-single-thumb'><p>Watchers: <span>" + result[i].watchers + "</span></p><p>Forks: <span>" + result[i].forks + "</span></p><p>Language: <span>" + result[i].language + "</span></p><p>Last Updated: <br/><span>" + updatedStr + "</span></p><h2 style=' " + $pad + "'><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
                     result[i].name + "</a></h2></div>"
                 );
                
             }
             
-            $("#repo_count").append("Total Repos: " + result.length);
 
         } // success function
 

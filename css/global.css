@@ -94,7 +94,7 @@ nav {
   /* line 96, ../scss/global.scss */
   .repository-thumbs .repo-single-thumb {
     position: relative;
-    width: 140px;
+    width: 218px;
     height: 140px;
     border: 2px solid #333333;
     float: left;
@@ -132,7 +132,7 @@ nav {
       -moz-transform: rotate(180deg);
       transform: rotate(180deg); }
     /* line 135, ../scss/global.scss */
-    .repository-thumbs .repo-single-thumb:nth-child(6n+6) {
+    .repository-thumbs .repo-single-thumb:nth-child(4n+4) {
       margin-right: 0px; }
     /* line 138, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb p {

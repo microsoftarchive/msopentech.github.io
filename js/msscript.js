@@ -11,13 +11,13 @@ function getFontSize(name){
                 return "font-size : 18px";
             }
             else if (($numChar >= 12) && ($numChar < 30)) {
-                return "font-size : 14px";
+                return "font-size : 16px";
             }
             else if (($numChar >= 30) && ($numChar < 40)) {
-                return "font-size : 11px";
+                return "font-size : 16px";
             }
             else {
-                return "font-size : 12px";
+                return "font-size : 16px";
             }
 
 } // getFontSize
@@ -28,7 +28,7 @@ function get_padding(name){
                 return "padding-top : 14px";
             }
             else {
-                return "padding-top: 5px";
+                return "padding-top: 10px";
             }
 
 } // get_padding
@@ -84,8 +84,8 @@ function parseISO8601(value) {
                 var $lineHeight = get_line_height(result[i].name);
                 var updatedStr = $.format.date(updatedAt, "MM/dd/yy") + ' ' + $.format.date(updatedAt, "@HH:mm:ss");
                 $(".repository-thumbs").append(
-                    "<div class='repo-single-thumb'><p>Watchers: <span>" + result[i].watchers + "</span></p><p>Forks: <span>" + result[i].forks + "</span></p><p>Language: <span>" + result[i].language + "</span></p><p>Last Updated: <br/><span>" + updatedStr + "</span></p><h2 style=' " + $pad + "; " + $lineHeight + ";'><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
-                    result[i].name + "</a></h2></div>"
+                    "<div class='repo-single-thumb'><p><div class='triangle'></div>Watchers: <span>" + result[i].watchers + "</span></p><p>Forks: <span>" + result[i].forks + "</span></p><p>Language: <span>" + result[i].language + "</span></p><p>Last Updated: <span>" + updatedStr + "</span></p><h2 style=' " + $pad + "; " + $lineHeight + ";'><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
+                    result[i].name + "</a></h2><div class='repo-single-popup'><p>" + result[i].description + "</p><h3>" + result[i].name + "</h3></div></div>"
                 );
                
             }
@@ -94,6 +94,13 @@ function parseISO8601(value) {
         } // success function
 
     }); // end ajax call
+    console.log($('.repo-single-thumb'));
+    $('.repository-thumbs').on('mouseover', '.repo-single-thumb', function(){
+        $(this).addClass('showing');
+    });
+    $('.repository-thumbs').on('mouseout', '.repo-single-thumb', function(){
+        $(this).removeClass('showing');
+    });
     // $.ajax({
     //         type: "GET",
     //         url: "https://api.github.com/repos/msopentech/dash.js/stats/participation",

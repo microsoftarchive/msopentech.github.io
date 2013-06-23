@@ -20,7 +20,6 @@ function getFontSize(name){
                 return "font-size : 16px";
             }
 
-
 } // getFontSize
 
 function get_padding(name){

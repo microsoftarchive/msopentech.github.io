@@ -51,8 +51,8 @@ function get_random_color() {
 }
 
 function get_random_class() {
-    var setClass = ['left', 'top', 'right', 'bottom'];
-    var rotate = setClass[Math.round(Math.random() * 3)];
+    var setClass = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+    var rotate = setClass[Math.round(Math.random() * 9)];
     return rotate;
 }
 
@@ -85,7 +85,7 @@ function parseISO8601(value) {
                 var updatedStr = $.format.date(updatedAt, "MM/dd/yy") + ' ' + $.format.date(updatedAt, "@HH:mm:ss");
                 $(".repository-thumbs").append(
                     "<div class='repo-single-thumb'><p>Watchers: <span>" + result[i].watchers + "</span></p><p>Forks: <span>" + result[i].forks + "</span></p><p>Language: <span>" + result[i].language + "</span></p><p>Last Updated: <span>" + updatedStr + "</span></p><h2 style=' " + $pad + "; " + $lineHeight + ";'><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
-                    result[i].name + "</a><span class='triangle'></span></h2><div class='repo-single-popup'><p>" + result[i].description + "</p><h3>" + result[i].name + "</h3></div></div>"
+                    result[i].name + "</a><span class='triangle " + get_random_class() + "'></span></h2><div class='repo-single-popup'><p>" + result[i].description + "</p><h3>" + result[i].name + "</h3></div></div>"
                 );
                
             }

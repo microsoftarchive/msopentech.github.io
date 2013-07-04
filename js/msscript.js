@@ -94,7 +94,6 @@ function parseISO8601(value) {
         } // success function
 
     }); // end ajax call
-    console.log($('.repo-single-thumb'));
     $('.repository-thumbs').on('mouseover', '.repo-single-thumb', function(){
         $(this).addClass('showing');
     });
@@ -122,8 +121,6 @@ function parseISO8601(value) {
     //         }
     // }); // end ajax
 
-//this may go back in - it is the triangle that randomly changes color and rotates
-// 
 
 
 }); // end annon function

@@ -104,6 +104,14 @@ nav {
     padding-top: 5px;
     padding-left: 5px; }
     /* line 107, ../scss/global.scss */
+    .repository-thumbs .repo-single-thumb .repo-graph {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 0; }
+    /* line 115, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .triangle {
       display: block;
       position: absolute;
@@ -114,47 +122,49 @@ nav {
       background: url(../images/triangleSprite.jpg) no-repeat;
       background-position: 0px top;
       z-index: 88888; }
-    /* line 118, ../scss/global.scss */
+    /* line 126, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .one {
       background-position: -73px top; }
-    /* line 119, ../scss/global.scss */
+    /* line 127, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .two {
       background-position: -146px top; }
-    /* line 120, ../scss/global.scss */
+    /* line 128, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .three {
       background-position: -219px top; }
-    /* line 121, ../scss/global.scss */
+    /* line 129, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .four {
       background-position: -292px top; }
-    /* line 122, ../scss/global.scss */
+    /* line 130, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .five {
       background-position: -365px top; }
-    /* line 123, ../scss/global.scss */
+    /* line 131, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .six {
       background-position: -438px top; }
-    /* line 124, ../scss/global.scss */
+    /* line 132, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .seven {
       background-position: -510px top; }
-    /* line 125, ../scss/global.scss */
+    /* line 133, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .eight {
       background-position: -581px top; }
-    /* line 126, ../scss/global.scss */
+    /* line 134, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .nine {
       background-position: -654px top; }
-    /* line 127, ../scss/global.scss */
+    /* line 135, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .ten {
       background-position: -727px top; }
-    /* line 128, ../scss/global.scss */
+    /* line 136, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb:nth-child(3n+3) {
       margin-right: 0px; }
-    /* line 131, ../scss/global.scss */
+    /* line 139, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb p {
       margin: 3px 0 0 0;
-      font-size: 14px; }
-      /* line 134, ../scss/global.scss */
+      font-size: 14px;
+      position: relative;
+      z-index: 1; }
+      /* line 144, ../scss/global.scss */
       .repository-thumbs .repo-single-thumb p span {
         color: #a92e8c; }
-    /* line 138, ../scss/global.scss */
+    /* line 148, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb h2 {
       text-align: center;
       position: absolute;
@@ -167,13 +177,13 @@ nav {
       padding: 5px;
       line-height: 11px;
       left: 0px; }
-      /* line 150, ../scss/global.scss */
+      /* line 160, ../scss/global.scss */
       .repository-thumbs .repo-single-thumb h2 a {
         word-wrap: break-word;
         position: relative;
         z-index: 89000;
         text-shadow: 2px 2px 2px #333333; }
-    /* line 157, ../scss/global.scss */
+    /* line 167, ../scss/global.scss */
     .repository-thumbs .repo-single-thumb .repo-single-popup {
       display: none;
       position: absolute;
@@ -185,11 +195,11 @@ nav {
       z-index: 99999;
       font-size: 12px;
       box-shadow: 4px 4px 8px #333333; }
-      /* line 168, ../scss/global.scss */
+      /* line 178, ../scss/global.scss */
       .repository-thumbs .repo-single-thumb .repo-single-popup p {
         padding: 10px 10px 40px 10px;
         font-size: 16px; }
-      /* line 172, ../scss/global.scss */
+      /* line 182, ../scss/global.scss */
       .repository-thumbs .repo-single-thumb .repo-single-popup h3 {
         margin: 0px;
         background: #333333;
@@ -201,73 +211,92 @@ nav {
         padding: 5px;
         word-wrap: break-word; }
 
-/* line 188, ../scss/global.scss */
+/* line 198, ../scss/global.scss */
 .repo-single-thumb.showing .repo-single-popup {
   display: block; }
 
-/* line 192, ../scss/global.scss */
+/* line 202, ../scss/global.scss */
 .repo-single-thumb:nth-child(3n) .repo-single-popup {
   left: -200px; }
 
-/* line 195, ../scss/global.scss */
+/* line 205, ../scss/global.scss */
 .repo-single-thumb:nth-last-child(-n + 3) .repo-single-popup {
   top: -100px; }
 
-/* line 198, ../scss/global.scss */
+/* line 208, ../scss/global.scss */
 .resources {
   width: 1100px;
   margin: 0 auto;
   background: #333333;
   color: white;
   padding-bottom: 15px; }
-  /* line 204, ../scss/global.scss */
+  /* line 214, ../scss/global.scss */
   .resources .resource-cat {
     width: 25%;
     float: left; }
-    /* line 207, ../scss/global.scss */
+    /* line 217, ../scss/global.scss */
     .resources .resource-cat h3 {
       color: white;
       text-align: center;
       margin: 15px 0; }
-    /* line 212, ../scss/global.scss */
+    /* line 222, ../scss/global.scss */
     .resources .resource-cat ul {
       width: 80%;
       margin: 0 auto;
       margin-left: 75px; }
 
-/* line 220, ../scss/global.scss */
+/* line 230, ../scss/global.scss */
 footer {
   width: 1100px;
   margin: 0 auto;
   background: #333333; }
-  /* line 224, ../scss/global.scss */
+  /* line 234, ../scss/global.scss */
   footer .policies {
     width: 100%;
     font-size: 12px;
     padding-bottom: 20px;
     padding-top: 10px; }
-    /* line 229, ../scss/global.scss */
+    /* line 239, ../scss/global.scss */
     footer .policies .policy-links {
       width: 50%;
       float: left; }
-      /* line 232, ../scss/global.scss */
+      /* line 242, ../scss/global.scss */
       footer .policies .policy-links ul li {
         float: left;
         width: 30%;
         text-align: center; }
-    /* line 239, ../scss/global.scss */
+    /* line 249, ../scss/global.scss */
     footer .policies .copyright {
       width: 49%;
       float: right; }
 
 /* TEMP STYLE FOR CHART */
-/* line 249, ../scss/global.scss */
+/* line 259, ../scss/global.scss */
+.timeline-thumbs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1; }
+
+/* line 268, ../scss/global.scss */
+.chart:after {
+  clear: both;
+  content: " ";
+  display: table; }
+
+/* line 274, ../scss/global.scss */
 .chart div {
-  font: 10px sans-serif;
-  background-color: steelblue;
-  text-align: right;
-  padding: 3px;
+  font: 1px sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px;
   margin: 1px;
-  color: white; }
+  color: red;
+  float: left; }
+
+/* line 283, ../scss/global.scss */
+.watchers {
+  display: none; }
 
 /* end css */

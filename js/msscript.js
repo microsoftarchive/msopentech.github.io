@@ -84,7 +84,7 @@ function parseISO8601(value) {
                 var $lineHeight = get_line_height(result[i].name);
                 var updatedStr = $.format.date(updatedAt, "MM/dd/yy") + ' ' + $.format.date(updatedAt, "@HH:mm:ss");
                 $(".repository-thumbs").append(
-                    "<div class='repo-single-thumb'><p>Watchers: <span>" + result[i].watchers + "</span></p><p>Forks: <span>" + result[i].forks + "</span></p><p>Language: <span>" + result[i].language + "</span></p><p>Last Updated: <span>" + updatedStr + "</span></p><h2 style=' " + $pad + "; " + $lineHeight + ";'><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
+                    "<div class='repo-single-thumb'><p class='watchers'>Watchers: <span>" + result[i].watchers + "</span></p><p>Forks: <span>" + result[i].forks + "</span></p><p>Language: <span>" + result[i].language + "</span></p><p>Last Updated: <span>" + updatedStr + "</span></p><h2 style=' " + $pad + "; " + $lineHeight + ";'><a href='" + result[i].html_url + "' target='_blank' style='" + $length + ";'>" +
                     result[i].name + "</a><span class='triangle " + get_random_class() + "'></span></h2><div class='repo-single-popup'><p>" + result[i].description + "</p><h3>" + result[i].name + "</h3></div></div>"
                 );
                
